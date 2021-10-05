@@ -97,7 +97,7 @@ $(document).ready(function(){
     }  // End if
   });
 });
-var sounds = ["suoni/10. Solletico_silvia.mp3","suoni/12. La mission dell'istituto.mp3","suoni/4. Mela_pode.mp3","suoni/5. Sveta che ride.mp3","suoni/6.porca paletta_anesi.mp3","suoni/7. La bottiglia_pode.m4a","suoni/claudio.mp3","suoni/fede1.m4a","suoni/fede2.m4a","suoni/fede3.m4a","suoni/fede4.m4a","suoni/fede5.m4a","suoni/fede6.m4a","suoni/fede7.m4a","suoni/fede8.m4a","suoni/gio_1.m4a","suoni/gio_2.m4a","suoni/gio_3.m4a","suoni/gio_as.m4a","suoni/gio_er.m4a","suoni/gio_federico.m4a","suoni/joan1.mp3","suoni/joan2.mp3","suoni/joan3.mp3","suoni/nadir.m4a","suoni/nicklas.mp3","suoni/nicola_caffe.mp3","suoni/ser1.m4a","suoni/ser2.m4a","suoni/sonia1.m4a","suoni/sonia2.m4a","suoni/WhatsApp Audio 2021-10-04 at 16.12.53.mp3","suoni/WhatsApp Ptt 2021-10-04 at 15.25.05.mp3","suoni/WhatsApp Ptt 2021-10-04 at 16.14.08.mp3","suoni/WhatsApp Ptt 2021-10-04 at 16.14.53.mp3"];
+var sounds = ["suoni/10. Solletico_silvia.mp3","suoni/12. La mission dell'istituto.mp3","suoni/4. Mela_pode.mp3","suoni/5. Sveta che ride.mp3","suoni/6.porca paletta_anesi.mp3","suoni/7. La bottiglia_pode.m4a","suoni/claudio.mp3","suoni/davide1.mp3","suoni/davide2.mp3","suoni/davide3.mp3","suoni/davide4.mp3","suoni/fede1.m4a","suoni/fede2.m4a","suoni/fede3.m4a","suoni/fede4.m4a","suoni/fede5.m4a","suoni/fede6.m4a","suoni/fede7.m4a","suoni/fede8.m4a","suoni/gio_1.m4a","suoni/gio_2.m4a","suoni/gio_3.m4a","suoni/gio_as.m4a","suoni/gio_er.m4a","suoni/gio_federico.m4a","suoni/joan1.mp3","suoni/joan3.mp3","suoni/martina11.mp3","suoni/martina12.mp3","suoni/martina13.mp3","suoni/nadir.m4a","suoni/nicklas.mp3","suoni/nicola_caffe.mp3","suoni/salamisound-8018068-bottle-of-sparkling-wine.mp3","suoni/ser1.m4a","suoni/ser2.m4a","suoni/sonia1.m4a","suoni/sonia2.m4a","suoni/sonia3.m4a","suoni/sonia4.m4a","suoni/sonia5.m4a","suoni/sonia6.m4a","suoni/WhatsApp Audio 2021-10-04 at 16.12.53.mp3","suoni/WhatsApp Ptt 2021-10-04 at 15.25.05.mp3","suoni/WhatsApp Ptt 2021-10-04 at 16.14.08.mp3","suoni/WhatsApp Ptt 2021-10-04 at 16.14.53.mp3"];
 
         
 
@@ -109,7 +109,8 @@ var sounds = ["suoni/10. Solletico_silvia.mp3","suoni/12. La mission dell'istitu
 
         function getRandomSounds() {
             var randomNum = Math.floor(Math.random()*sounds.length);
-            document.getElementById("myaudio").src=sounds[randomNum];	
+            document.getElementById("myaudio").src=sounds[randomNum];
+		sounds.splice(randomNum, 1);	
 			}
 			}
        
